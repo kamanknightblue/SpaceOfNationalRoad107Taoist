@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "5D3xlhB1u5QO78lb3EC8hlBQIqHEElA+YI27LTvs/LBK6AT4UDJejhnwvpCtcewU2TnVCB6Yn+5A/PQUZm939g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Wei\\Desktop\\新建文件夹 (2)\\SpaceOfNationalRoad107Taoist\\host\\SpaceOfNationalRoad107Taoist.Host.Shared\\SpaceOfNationalRoad107Taoist.Host.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Wei\\.nuget\\packages\\configureawait.fody\\3.3.1\\configureawait.fody.3.3.1.nupkg.sha512",
+    "C:\\Users\\Wei\\.nuget\\packages\\fody\\6.5.3\\fody.6.5.3.nupkg.sha512",
+    "C:\\Users\\Wei\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Wei\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
