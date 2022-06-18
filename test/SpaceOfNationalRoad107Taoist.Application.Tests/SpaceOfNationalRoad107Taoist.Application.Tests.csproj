@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>SpaceOfNationalRoad107Taoist</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\SpaceOfNationalRoad107Taoist.Application\SpaceOfNationalRoad107Taoist.Application.csproj" />
+    <ProjectReference Include="..\SpaceOfNationalRoad107Taoist.Domain.Tests\SpaceOfNationalRoad107Taoist.Domain.Tests.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,79 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "SpaceOfNationalRoad107Taoist.Domain.Shared": {
+      "path": "src/SpaceOfNationalRoad107Taoist.Domain.Shared/SpaceOfNationalRoad107Taoist.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "SpaceOfNationalRoad107Taoist.Domain": {
+      "path": "src/SpaceOfNationalRoad107Taoist.Domain/SpaceOfNationalRoad107Taoist.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "SpaceOfNationalRoad107Taoist.Application.Contracts": {
+      "path": "src/SpaceOfNationalRoad107Taoist.Application.Contracts/SpaceOfNationalRoad107Taoist.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "SpaceOfNationalRoad107Taoist.Application": {
+      "path": "src/SpaceOfNationalRoad107Taoist.Application/SpaceOfNationalRoad107Taoist.Application.abppkg.json",
+      "folder": "src"
+    },
+    "SpaceOfNationalRoad107Taoist.EntityFrameworkCore": {
+      "path": "src/SpaceOfNationalRoad107Taoist.EntityFrameworkCore/SpaceOfNationalRoad107Taoist.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "SpaceOfNationalRoad107Taoist.MongoDB": {
+      "path": "src/SpaceOfNationalRoad107Taoist.MongoDB/SpaceOfNationalRoad107Taoist.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "SpaceOfNationalRoad107Taoist.HttpApi": {
+      "path": "src/SpaceOfNationalRoad107Taoist.HttpApi/SpaceOfNationalRoad107Taoist.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "SpaceOfNationalRoad107Taoist.HttpApi.Client": {
+      "path": "src/SpaceOfNationalRoad107Taoist.HttpApi.Client/SpaceOfNationalRoad107Taoist.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "SpaceOfNationalRoad107Taoist.TestBase": {
+      "path": "test/SpaceOfNationalRoad107Taoist.TestBase/SpaceOfNationalRoad107Taoist.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "SpaceOfNationalRoad107Taoist.EntityFrameworkCore.Tests": {
+      "path": "test/SpaceOfNationalRoad107Taoist.EntityFrameworkCore.Tests/SpaceOfNationalRoad107Taoist.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "SpaceOfNationalRoad107Taoist.MongoDB.Tests": {
+      "path": "test/SpaceOfNationalRoad107Taoist.MongoDB.Tests/SpaceOfNationalRoad107Taoist.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "SpaceOfNationalRoad107Taoist.Domain.Tests": {
+      "path": "test/SpaceOfNationalRoad107Taoist.Domain.Tests/SpaceOfNationalRoad107Taoist.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "SpaceOfNationalRoad107Taoist.Application.Tests": {
+      "path": "test/SpaceOfNationalRoad107Taoist.Application.Tests/SpaceOfNationalRoad107Taoist.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "SpaceOfNationalRoad107Taoist.HttpApi.Host": {
+      "path": "host/SpaceOfNationalRoad107Taoist.HttpApi.Host/SpaceOfNationalRoad107Taoist.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "SpaceOfNationalRoad107Taoist.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/SpaceOfNationalRoad107Taoist.HttpApi.Client.ConsoleTestApp/SpaceOfNationalRoad107Taoist.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "SpaceOfNationalRoad107Taoist.IdentityServer": {
+      "path": "host/SpaceOfNationalRoad107Taoist.IdentityServer/SpaceOfNationalRoad107Taoist.IdentityServer.abppkg.json",
+      "folder": "host"
+    },
+    "SpaceOfNationalRoad107Taoist.Host.Shared": {
+      "path": "host/SpaceOfNationalRoad107Taoist.Host.Shared/SpaceOfNationalRoad107Taoist.Host.Shared.abppkg.json",
+      "folder": "host"
+    }
+  }
+}
