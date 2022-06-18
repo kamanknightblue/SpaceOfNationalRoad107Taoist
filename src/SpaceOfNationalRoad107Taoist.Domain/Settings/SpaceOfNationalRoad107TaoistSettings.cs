@@ -2,9 +2,8 @@
 
 public static class SpaceOfNationalRoad107TaoistSettings
 {
-    public const string GroupName = "SpaceOfNationalRoad107Taoist";
+    private const string Prefix = "SpaceOfNationalRoad107Taoist";
 
-    /* Add constants for setting names. Example:
-     * public const string MySettingName = GroupName + ".MySettingName";
-     */
+    //Add your own setting names here. Example:
+    //public const string MySetting1 = Prefix + ".MySetting1";
 }

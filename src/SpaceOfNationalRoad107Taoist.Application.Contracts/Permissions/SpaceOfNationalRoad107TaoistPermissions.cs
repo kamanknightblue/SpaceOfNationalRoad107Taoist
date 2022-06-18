@@ -1,13 +1,9 @@
-﻿using Volo.Abp.Reflection;
+﻿namespace SpaceOfNationalRoad107Taoist.Permissions;
 
-namespace SpaceOfNationalRoad107Taoist.Permissions;
-
-public class SpaceOfNationalRoad107TaoistPermissions
+public static class SpaceOfNationalRoad107TaoistPermissions
 {
     public const string GroupName = "SpaceOfNationalRoad107Taoist";
 
-    public static string[] GetAll()
-    {
-        return ReflectionHelper.GetPublicConstantsRecursively(typeof(SpaceOfNationalRoad107TaoistPermissions));
-    }
+    //Add your own permission names. Example:
+    //public const string MyPermission1 = GroupName + ".MyPermission1";
 }

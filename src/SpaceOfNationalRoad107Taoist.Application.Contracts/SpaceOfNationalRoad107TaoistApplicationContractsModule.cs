@@ -1,15 +1,28 @@
-﻿using Volo.Abp.Application;
+﻿using Volo.Abp.Account;
+using Volo.Abp.FeatureManagement;
+using Volo.Abp.Identity;
 using Volo.Abp.Modularity;
-using Volo.Abp.Authorization;
+using Volo.Abp.ObjectExtending;
+using Volo.Abp.PermissionManagement;
+using Volo.Abp.SettingManagement;
+using Volo.Abp.TenantManagement;
 
 namespace SpaceOfNationalRoad107Taoist;
 
 [DependsOn(
     typeof(SpaceOfNationalRoad107TaoistDomainSharedModule),
-    typeof(AbpDddApplicationContractsModule),
-    typeof(AbpAuthorizationModule)
-    )]
+    typeof(AbpAccountApplicationContractsModule),
+    typeof(AbpFeatureManagementApplicationContractsModule),
+    typeof(AbpIdentityApplicationContractsModule),
+    typeof(AbpPermissionManagementApplicationContractsModule),
+    typeof(AbpSettingManagementApplicationContractsModule),
+    typeof(AbpTenantManagementApplicationContractsModule),
+    typeof(AbpObjectExtendingModule)
+)]
 public class SpaceOfNationalRoad107TaoistApplicationContractsModule : AbpModule
 {
-
+    public override void PreConfigureServices(ServiceConfigurationContext context)
+    {
+        SpaceOfNationalRoad107TaoistDtoExtensions.Configure();
+    }
 }

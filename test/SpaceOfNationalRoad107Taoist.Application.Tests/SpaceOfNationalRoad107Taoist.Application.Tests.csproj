@@ -10,6 +10,9 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\SpaceOfNationalRoad107Taoist.Application\SpaceOfNationalRoad107Taoist.Application.csproj" />
     <ProjectReference Include="..\SpaceOfNationalRoad107Taoist.Domain.Tests\SpaceOfNationalRoad107Taoist.Domain.Tests.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
   </ItemGroup>
 

@@ -252,11 +252,14 @@ paket-files/
 *.sln.iml
 
 # SpaceOfNationalRoad107Taoist
-host/SpaceOfNationalRoad107Taoist.IdentityServer/Logs/logs.txt
-host/SpaceOfNationalRoad107Taoist.HttpApi.Host/Logs/logs.txt
-host/SpaceOfNationalRoad107Taoist.Web.Host/Logs/logs.txt
-host/SpaceOfNationalRoad107Taoist.Web.Unified/Logs/logs.txt
-host/SpaceOfNationalRoad107Taoist.Blazor.Server.Host/Logs/logs.txt
+src/SpaceOfNationalRoad107Taoist.Web/Logs/*
+src/SpaceOfNationalRoad107Taoist.Web.Host/Logs/*
+src/SpaceOfNationalRoad107Taoist.IdentityServer/Logs/*
+src/SpaceOfNationalRoad107Taoist.HttpApi.Host/Logs/*
+src/SpaceOfNationalRoad107Taoist.HttpApi.HostWithIds/Logs/*
+src/SpaceOfNationalRoad107Taoist.DbMigrator/Logs/*
+src/SpaceOfNationalRoad107Taoist.Blazor/Logs/*
+src/SpaceOfNationalRoad107Taoist.Blazor.Tiered/Logs/*
 
 # Use abp install-libs to restore.
 **/wwwroot/libs/*

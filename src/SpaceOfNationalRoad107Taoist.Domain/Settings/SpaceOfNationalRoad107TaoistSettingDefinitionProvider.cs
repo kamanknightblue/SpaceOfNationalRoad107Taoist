@@ -6,8 +6,7 @@ public class SpaceOfNationalRoad107TaoistSettingDefinitionProvider : SettingDefi
 {
     public override void Define(ISettingDefinitionContext context)
     {
-        /* Define module settings here.
-         * Use names from SpaceOfNationalRoad107TaoistSettings class.
-         */
+        //Define your own settings here. Example:
+        //context.Add(new SettingDefinition(SpaceOfNationalRoad107TaoistSettings.MySetting1));
     }
 }

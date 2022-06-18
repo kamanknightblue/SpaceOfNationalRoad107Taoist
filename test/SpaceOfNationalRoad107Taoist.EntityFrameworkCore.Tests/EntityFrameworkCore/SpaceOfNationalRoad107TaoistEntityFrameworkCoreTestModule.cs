@@ -2,6 +2,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
+using Microsoft.Extensions.DependencyInjection;
+using Volo.Abp;
 using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.Sqlite;
 using Volo.Abp.Modularity;
@@ -9,23 +11,35 @@ using Volo.Abp.Modularity;
 namespace SpaceOfNationalRoad107Taoist.EntityFrameworkCore;
 
 [DependsOn(
-    typeof(SpaceOfNationalRoad107TaoistTestBaseModule),
     typeof(SpaceOfNationalRoad107TaoistEntityFrameworkCoreModule),
+    typeof(SpaceOfNationalRoad107TaoistTestBaseModule),
     typeof(AbpEntityFrameworkCoreSqliteModule)
     )]
 public class SpaceOfNationalRoad107TaoistEntityFrameworkCoreTestModule : AbpModule
 {
+    private SqliteConnection _sqliteConnection;
+
     public override void ConfigureServices(ServiceConfigurationContext context)
     {
-        var sqliteConnection = CreateDatabaseAndGetConnection();
+        ConfigureInMemorySqlite(context.Services);
+    }
 
-        Configure<AbpDbContextOptions>(options =>
+    private void ConfigureInMemorySqlite(IServiceCollection services)
+    {
+        _sqliteConnection = CreateDatabaseAndGetConnection();
+
+        services.Configure<AbpDbContextOptions>(options =>
         {
-            options.Configure(abpDbContextConfigurationContext =>
+            options.Configure(context =>
             {
-                abpDbContextConfigurationContext.DbContextOptions.UseSqlite(sqliteConnection);
+                context.DbContextOptions.UseSqlite(_sqliteConnection);
             });
         });
+    }
+
+    public override void OnApplicationShutdown(ApplicationShutdownContext context)
+    {
+        _sqliteConnection.Dispose();
     }
 
     private static SqliteConnection CreateDatabaseAndGetConnection()
@@ -33,9 +47,14 @@ public class SpaceOfNationalRoad107TaoistEntityFrameworkCoreTestModule : AbpModu
         var connection = new SqliteConnection("Data Source=:memory:");
         connection.Open();
 
-        new SpaceOfNationalRoad107TaoistDbContext(
-            new DbContextOptionsBuilder<SpaceOfNationalRoad107TaoistDbContext>().UseSqlite(connection).Options
-        ).GetService<IRelationalDatabaseCreator>().CreateTables();
+        var options = new DbContextOptionsBuilder<SpaceOfNationalRoad107TaoistDbContext>()
+            .UseSqlite(connection)
+            .Options;
+
+        using (var context = new SpaceOfNationalRoad107TaoistDbContext(options))
+        {
+            context.GetService<IRelationalDatabaseCreator>().CreateTables();
+        }
 
         return connection;
     }

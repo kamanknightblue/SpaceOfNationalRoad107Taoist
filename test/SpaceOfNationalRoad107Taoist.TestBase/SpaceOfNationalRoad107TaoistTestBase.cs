@@ -8,7 +8,8 @@ using Volo.Abp.Testing;
 
 namespace SpaceOfNationalRoad107Taoist;
 
-/* All test classes are derived from this class, directly or indirectly. */
+/* All test classes are derived from this class, directly or indirectly.
+ */
 public abstract class SpaceOfNationalRoad107TaoistTestBase<TStartupModule> : AbpIntegratedTest<TStartupModule>
     where TStartupModule : IAbpModule
 {

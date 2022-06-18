@@ -8,7 +8,9 @@ public class SpaceOfNationalRoad107TaoistPermissionDefinitionProvider : Permissi
 {
     public override void Define(IPermissionDefinitionContext context)
     {
-        var myGroup = context.AddGroup(SpaceOfNationalRoad107TaoistPermissions.GroupName, L("Permission:SpaceOfNationalRoad107Taoist"));
+        var myGroup = context.AddGroup(SpaceOfNationalRoad107TaoistPermissions.GroupName);
+        //Define your own permissions here. Example:
+        //myGroup.AddPermission(SpaceOfNationalRoad107TaoistPermissions.MyPermission1, L("Permission:MyPermission1"));
     }
 
     private static LocalizableString L(string name)
